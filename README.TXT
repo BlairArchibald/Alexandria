@@ -3,6 +3,8 @@ This software is for use in our raspberry Pi Ebook reader project - Alexandria.
 
 Blair Archibald 2013
 
+-------------------------
+
 CoolReader 3 - free e-book reader
 (c) Vadim Lopatin, 1998-2009
 
