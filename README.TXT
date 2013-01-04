@@ -1,3 +1,8 @@
+Ebook reading software based on CoolReader 3
+This software is for use in our raspberry Pi Ebook reader project - Alexandria.
+
+Blair Archibald 2013
+
 CoolReader 3 - free e-book reader
 (c) Vadim Lopatin, 1998-2009
 
@@ -6,8 +11,6 @@ are provided under the terms of GNU GPL license, version 2
 
 Source codes are available at sourceforge:
 git clone git://crengine.git.sourceforge.net/gitroot/crengine/crengine
-
-
 
 Directories:
 
