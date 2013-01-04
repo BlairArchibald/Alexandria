@@ -63,6 +63,7 @@ void on_actionFindText_triggered();
     void on_actionMinimize_triggered();
     void on_actionOpen_triggered();
     void on_actionExport_triggered();
+    void on_actionShutdown_triggered();
     void on_view_destroyed();
 };
 

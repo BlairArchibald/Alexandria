@@ -146,6 +146,8 @@
    <addaction name="actionRotate"/>
    <addaction name="separator"/>
    <addaction name="actionSettings"/>
+   <addaction name="separator"/>
+   <addaction name="actionShutdown"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
@@ -399,10 +401,22 @@
     <string>Settings...</string>
    </property>
    <property name="toolTip">
-    <string>Settings dialog</string>
+    <string>Blair Changed me</string>
    </property>
    <property name="shortcut">
     <string>F9</string>
+   </property>
+  </action>
+  <action name="actionShutdown">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/action/icons/exit.png</normaloff>:/icons/action/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Shutdown</string>
+   </property>
+   <property name="toolTip">
+    <string>Shutdown</string>
    </property>
   </action>
   <action name="actionCopy">

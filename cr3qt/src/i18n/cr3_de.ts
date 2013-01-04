@@ -656,10 +656,6 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>All supported formats (*.fb2 *.txt *.tcr *.rtf *.epub *.html *.htm *.zip);;FB2 books (*.fb2 *.fb2.zip);;Text files (*.txt);;Rich text (*.rtf);;HTML files (*.htm *.html);;EPUB files (*.epub);;ZIP archives (*.zip)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Export document to</source>
         <translation type="unfinished"></translation>
     </message>
@@ -669,6 +665,10 @@ See README.TXT at root directory of project for build instructions.
     </message>
     <message>
         <source>Export to WOL format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All supported formats (*.fb2 *.txt *.tcr *.rtf *.epub *.html *.htm *.chm *.zip);;FB2 books (*.fb2 *.fb2.zip);;Text files (*.txt);;Rich text (*.rtf);;HTML files (*.htm *.html);;EPUB files (*.epub);;CHM files (*.chm);;ZIP archives (*.zip)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -899,10 +899,6 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Settings dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>F9</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1052,6 +1048,14 @@ See README.TXT at root directory of project for build instructions.
     </message>
     <message>
         <source>Left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blair Changed me</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

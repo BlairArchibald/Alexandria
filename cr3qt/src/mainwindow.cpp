@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QtGui/QFileDialog>
@@ -36,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
     addAction(ui->actionTOC);
     addAction(ui->actionToggle_Full_Screen);
     addAction(ui->actionSettings);
+    addAction(ui->actionShutdown);
     addAction(ui->actionClose);
     addAction(ui->actionToggle_Pages_Scroll);
     addAction(ui->actionMinimize);
@@ -321,6 +323,12 @@ void MainWindow::on_actionRecentBooks_triggered()
 void MainWindow::on_actionSettings_triggered()
 {
     SettingsDlg::showDlg( this, ui->view );
+}
+
+void MainWindow::on_actionShutdown_triggered()
+{
+    CRLog::debug("Shutting Down");
+    system("shutdown -h now");
 }
 
 void MainWindow::toggleProperty( const char * name )
