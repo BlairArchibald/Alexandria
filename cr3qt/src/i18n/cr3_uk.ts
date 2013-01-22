@@ -1028,7 +1028,7 @@ http://sourceforge.net/projects/crengine/
     <name>MainWindowClass</name>
     <message>
         <source>CoolReader</source>
-        <translation>CoolReader</translation>
+        <translation type="obsolete">CoolReader</translation>
     </message>
     <message>
         <source>File</source>
@@ -1411,7 +1411,11 @@ http://sourceforge.net/projects/crengine/
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Blair Changed me</source>
+        <source>Settings</source>
+        <translation type="unfinished">Налаштування</translation>
+    </message>
+    <message>
+        <source>Alexandria Reader</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -675,10 +675,6 @@ See README.TXT at root directory of project for build instructions.
 <context>
     <name>MainWindowClass</name>
     <message>
-        <source>CoolReader</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Open...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1055,7 +1051,11 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Blair Changed me</source>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Alexandria Reader</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

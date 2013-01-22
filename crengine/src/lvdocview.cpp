@@ -157,7 +157,7 @@ LVDocView::LVDocView(int bitsPerPixel) :
 
 	//m_drawbuf.Clear(m_backgroundColor);
 	createDefaultDocument(lString16(L"No document"), lString16(
-			L"Welcome to CoolReader! Please select file to open"));
+			L"Welcome to Alexandria Ebook Reader! Please select file to open"));
 
 	m_font = fontMan->GetFont(m_font_size, 400, false, DEFAULT_FONT_FAMILY,
 			m_defaultFontFace);

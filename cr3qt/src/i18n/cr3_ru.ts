@@ -875,10 +875,6 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished">Найти текст</translation>
     </message>
     <message>
-        <source>CoolReader</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>F3</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1075,7 +1071,11 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Blair Changed me</source>
+        <source>Settings</source>
+        <translation type="unfinished">Настройки</translation>
+    </message>
+    <message>
+        <source>Alexandria Reader</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

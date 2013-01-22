@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CoolReader</string>
+   <string>Alexandria Reader</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -130,23 +130,24 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="separator"/>
    <addaction name="actionOpen"/>
-   <addaction name="actionRecentBooks"/>
-   <addaction name="separator"/>
+   <!--
+      -<addaction name="actionRecentBooks"/>
+      -->
    <addaction name="actionTOC"/>
-   <addaction name="separator"/>
-   <addaction name="actionFindText"/>
+   <!--
+      -<addaction name="actionFindText"/>
+      -->
    <addaction name="separator"/>
    <addaction name="actionPrevPage"/>
-   <addaction name="actionNextPage"/>
-   <addaction name="separator"/>
    <addaction name="actionZoom_In"/>
    <addaction name="actionZoom_Out"/>
    <addaction name="actionRotate"/>
+   <addaction name="actionNextPage"/>
    <addaction name="separator"/>
-   <addaction name="actionSettings"/>
-   <addaction name="separator"/>
+   <!--
+      -<addaction name="actionSettings"/>
+      -->
    <addaction name="actionShutdown"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
@@ -401,7 +402,7 @@
     <string>Settings...</string>
    </property>
    <property name="toolTip">
-    <string>Blair Changed me</string>
+    <string>Settings</string>
    </property>
    <property name="shortcut">
     <string>F9</string>
