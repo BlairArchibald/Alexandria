@@ -480,9 +480,14 @@ void MainWindow::on_actionFindText_triggered()
 //    mb->exec();
 }
 
-void MainWindow::on_actionRotate_triggered()
+void MainWindow::on_actionRotateRight_triggered()
 {
     ui->view->rotate( 1 );
+}
+
+void MainWindow::on_actionRotateLeft_triggered()
+{
+    ui->view->rotate( -1 );
 }
 
 void MainWindow::on_actionToggleEditMode_triggered()

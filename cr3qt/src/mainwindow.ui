@@ -89,7 +89,7 @@
     <addaction name="actionToggle_Full_Screen"/>
     <addaction name="actionZoom_In"/>
     <addaction name="actionZoom_Out"/>
-    <addaction name="actionRotate"/>
+    <addaction name="actionRotateRight"/>
     <addaction name="separator"/>
     <addaction name="actionTOC"/>
     <addaction name="actionShowBookmarksList"/>
@@ -142,7 +142,8 @@
    <addaction name="actionPrevPage"/>
    <addaction name="actionZoom_In"/>
    <addaction name="actionZoom_Out"/>
-   <addaction name="actionRotate"/>
+   <addaction name="actionRotateLeft"/>
+   <addaction name="actionRotateRight"/>
    <addaction name="actionNextPage"/>
    <addaction name="separator"/>
    <!--
@@ -510,10 +511,22 @@
     <string>Ctrl+F1</string>
    </property>
   </action>
-  <action name="actionRotate">
+  <action name="actionRotateRight">
    <property name="icon">
     <iconset>
      <normaloff>:/icons/action/icons/rotate_cw.png</normaloff>:/icons/action/icons/rotate_cw.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotate</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionRotateLeft">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/action/icons/rotate_ccw.png</normaloff>:/icons/action/icons/rotate_cw.png</iconset>
    </property>
    <property name="text">
     <string>Rotate</string>

@@ -32,7 +32,8 @@ public slots:
 void on_actionFindText_triggered();
     private slots:
     void on_actionToggleEditMode_triggered();
-    void on_actionRotate_triggered();
+    void on_actionRotateRight_triggered();
+    void on_actionRotateLeft_triggered();
     void on_actionFileProperties_triggered();
     void on_actionShowBookmarksList_triggered();
     void on_actionAddBookmark_triggered();
