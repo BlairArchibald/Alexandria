@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.0" language="es_ES">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -1275,12 +1275,12 @@ See README.TXT at root directory of project for build instructions.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../recentdlg.cpp" line="154"/>
+        <location filename="../recentdlg.cpp" line="158"/>
         <source>Remove all history items</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../recentdlg.cpp" line="154"/>
+        <location filename="../recentdlg.cpp" line="158"/>
         <source>Do you really want to remove all history records?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1307,6 +1307,16 @@ See README.TXT at root directory of project for build instructions.
 </context>
 <context>
     <name>SearchDialog</name>
+    <message>
+        <location filename="../searchdlg.cpp" line="113"/>
+        <source>Not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../searchdlg.cpp" line="113"/>
+        <source>Search pattern is not found in document</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../../qtbuild/cr3qt/ui_searchdlg.h" line="118"/>
         <source>Search</source>
@@ -1340,16 +1350,6 @@ See README.TXT at root directory of project for build instructions.
     <message>
         <location filename="../../../qtbuild/cr3qt/ui_searchdlg.h" line="124"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../searchdlg.cpp" line="113"/>
-        <source>Not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../searchdlg.cpp" line="113"/>
-        <source>Search pattern is not found in document</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

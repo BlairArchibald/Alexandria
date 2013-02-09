@@ -26,12 +26,16 @@ RecentBooksDlg::RecentBooksDlg(QWidget *parent, CR3View * docView ) :
     docView->getDocView()->savePosition(); // to move current file to top
     LVPtrVector<CRFileHistRecord> & files = docView->getDocView()->getHistory()->getRecords();
     // skip Null
-    m_ui->tableWidget->setRowCount(files.length()-1);
     m_ui->tableWidget->setWordWrap(false);
     m_ui->tableWidget->setSelectionMode(QAbstractItemView::SingleSelection);
     m_ui->tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
     m_ui->tableWidget->setSortingEnabled(true);
     int firstItem = docView->getDocView()->isDocumentOpened() ? 1 : 0;
+    if (firstItem == 1) {
+        m_ui->tableWidget->setRowCount(files.length() - 1);
+    } else {
+    m_ui->tableWidget->setRowCount(files.length());
+    }
     for ( int i=firstItem; i<files.length(); i++ ) {
         CRFileHistRecord * book = files.get( i );
         lString16 author = book->getAuthor();
@@ -84,11 +88,11 @@ bool RecentBooksDlg::showDlg( QWidget * parent,  CR3View * docView )
 void RecentBooksDlg::changeEvent(QEvent *e)
 {
     switch (e->type()) {
-    case QEvent::LanguageChange:
-        m_ui->retranslateUi(this);
-        break;
-    default:
-        break;
+        case QEvent::LanguageChange:
+            m_ui->retranslateUi(this);
+            break;
+        default:
+            break;
     }
 }
 
