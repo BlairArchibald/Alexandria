@@ -1026,12 +1026,12 @@ See README.TXT at root directory of project for build instructions.
     </message>
     <message>
         <location filename="../../../qtbuild/cr3qt/ui_mainwindow.h" line="397"/>
-        <source>Recent Books</source>
+        <source>Your Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../qtbuild/cr3qt/ui_mainwindow.h" line="399"/>
-        <source>Show recent books list</source>
+        <source>Show Your Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -130,10 +130,10 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionOpen"/>
    <!--
-      -<addaction name="actionRecentBooks"/>
-      -->
+   <addaction name="actionOpen"/>
+   -->
+  <addaction name="actionRecentBooks"/>
    <addaction name="actionTOC"/>
    <!--
       -<addaction name="actionFindText"/>
@@ -385,10 +385,10 @@
      <normaloff>:/icons/action/icons/folder_favorite.png</normaloff>:/icons/action/icons/folder_favorite.png</iconset>
    </property>
    <property name="text">
-    <string>Recent Books</string>
+    <string>Your Library</string>
    </property>
    <property name="toolTip">
-    <string>Show recent books list</string>
+    <string>Show Your Library</string>
    </property>
    <property name="shortcut">
     <string>F5</string>
