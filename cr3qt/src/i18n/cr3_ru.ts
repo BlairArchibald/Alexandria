@@ -1286,7 +1286,7 @@ See README.TXT at root directory of project for build instructions.
     </message>
     <message>
         <location filename="../../../qtbuild/cr3qt/ui_recentdlg.h" line="71"/>
-        <source>Recent Books</source>
+        <source>Your Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

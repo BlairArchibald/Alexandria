@@ -34,8 +34,8 @@ RecentBooksDlg::RecentBooksDlg(QWidget *parent, CR3View * docView ) :
     if (firstItem == 1) {
         m_ui->tableWidget->setRowCount(files.length() - 1);
     } else {
-    m_ui->tableWidget->setRowCount(files.length());
-    }
+        m_ui->tableWidget->setRowCount(files.length());
+    } 
     for ( int i=firstItem; i<files.length(); i++ ) {
         CRFileHistRecord * book = files.get( i );
         lString16 author = book->getAuthor();
