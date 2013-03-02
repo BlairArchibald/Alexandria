@@ -357,6 +357,8 @@ void MainWindow::onPropsChange( PropsRef props )
         }
         if ( name == PROP_WINDOW_TOOLBAR_SIZE ) {
             ui->mainToolBar->setVisible( v );
+            ui->mainToolBar->setIconSize(QSize(128,64));
+            //ui->mainToolBar->setStyleSheet("spacing: 50px"); 
         }
         if ( name == PROP_WINDOW_SHOW_STATUSBAR ) {
             ui->statusBar->setVisible( v );
@@ -387,8 +389,8 @@ void MainWindow::on_actionCopy_triggered()
 {
     QString txt = ui->view->getSelectionText();
     if ( txt.length()>0 ) {
-         QClipboard * clipboard = QApplication::clipboard();
-         clipboard->setText(txt);
+        QClipboard * clipboard = QApplication::clipboard();
+        clipboard->setText(txt);
     }
 }
 
@@ -438,12 +440,12 @@ void MainWindow::focusInEvent ( QFocusEvent * event )
     if ( !firstFocus )
         return;
     CRLog::debug("first focusInEvent()");
-//    int n = ui->view->getOptions()->getIntDef( PROP_APP_START_ACTION, 0 );
-//    if ( n==1 ) {
-//        // show recent books dialog
-//        CRLog::info("Startup Action: Show recent books dialog");
-//        RecentBooksDlg::showDlg( ui->view );
-//    }
+    //    int n = ui->view->getOptions()->getIntDef( PROP_APP_START_ACTION, 0 );
+    //    if ( n==1 ) {
+    //        // show recent books dialog
+    //        CRLog::info("Startup Action: Show recent books dialog");
+    //        RecentBooksDlg::showDlg( ui->view );
+    //    }
 
     firstFocus = false;
 }
@@ -476,8 +478,8 @@ void MainWindow::on_actionFileProperties_triggered()
 void MainWindow::on_actionFindText_triggered()
 {
     SearchDialog::showDlg(this, ui->view);
-//    QMessageBox * mb = new QMessageBox( QMessageBox::Information, tr("Not implemented"), tr("Search is not implemented yet"), QMessageBox::Close, this );
-//    mb->exec();
+    //    QMessageBox * mb = new QMessageBox( QMessageBox::Information, tr("Not implemented"), tr("Search is not implemented yet"), QMessageBox::Close, this );
+    //    mb->exec();
 }
 
 void MainWindow::on_actionRotateRight_triggered()
