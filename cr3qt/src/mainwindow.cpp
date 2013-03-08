@@ -61,6 +61,7 @@ MainWindow::MainWindow(QWidget *parent)
     addAction(ui->actionShowBookmarksList);
     addAction(ui->actionCopy);
     addAction(ui->actionToggleEditMode);
+    addAction(ui->actionUpdateLibrary);
 
 #ifdef _LINUX
     QString homeDir = QDir::toNativeSeparators(QDir::homePath() + "/.cr3/");
@@ -331,6 +332,12 @@ void MainWindow::on_actionShutdown_triggered()
     system("shutdown -h now");
 }
 
+void MainWindow::on_actionUpdateLibrary_triggered()
+{
+    CRLog::debug("Updating Library");
+    system("updatelibrary");
+}
+
 void MainWindow::toggleProperty( const char * name )
 {
     ui->view->toggleProperty( name );
@@ -357,7 +364,7 @@ void MainWindow::onPropsChange( PropsRef props )
         }
         if ( name == PROP_WINDOW_TOOLBAR_SIZE ) {
             ui->mainToolBar->setVisible( v );
-            ui->mainToolBar->setIconSize(QSize(128,64));
+            ui->mainToolBar->setIconSize(QSize(100,100));
             //ui->mainToolBar->setStyleSheet("spacing: 50px"); 
         }
         if ( name == PROP_WINDOW_SHOW_STATUSBAR ) {
