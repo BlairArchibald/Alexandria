@@ -334,8 +334,14 @@ void MainWindow::on_actionShutdown_triggered()
 
 void MainWindow::on_actionUpdateLibrary_triggered()
 {
+    QString histFile = exeDir + "cr3hist.bmk";
+    QString histFile2 = homeDir + "cr3hist.bmk";
+
     CRLog::debug("Updating Library");
     system("updatelibrary");
+
+    if ( !ui->view->loadHistory( histFile ) )
+        ui->view->loadHistory( histFile2 );
 }
 
 void MainWindow::toggleProperty( const char * name )
