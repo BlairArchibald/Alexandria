@@ -334,10 +334,20 @@ void MainWindow::on_actionShutdown_triggered()
 
 void MainWindow::on_actionUpdateLibrary_triggered()
 {
+    QString homeDir = QDir::toNativeSeparators(QDir::homePath() + "/.cr3/");
+    QString exeDir = QString(CR3_DATA_DIR);
+
     QString histFile = exeDir + "cr3hist.bmk";
     QString histFile2 = homeDir + "cr3hist.bmk";
 
     CRLog::debug("Updating Library");
+
+    //Save and clear history - it's going to get reloaded anyway
+    if ( !ui->view->saveHistory( histFile ) )
+        ui->view->saveHistory( histFile2 );
+
+    ui->view->getDocView()->getHistory()->clear();
+
     system("updatelibrary");
 
     if ( !ui->view->loadHistory( histFile ) )
