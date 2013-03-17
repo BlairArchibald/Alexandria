@@ -3,6 +3,7 @@
 #include "cr3widget.h"
 #include "../crengine/include/lvdocview.h"
 #include <QStandardItemModel>
+#include <QFont>
 #include "crqtutil.h"
 
 class TocItem : public QTreeWidgetItem
@@ -46,6 +47,12 @@ TocDlg::TocDlg(QWidget *parent, CR3View * docView) :
 {
     setAttribute( Qt::WA_DeleteOnClose, true );
     m_ui->setupUi(this);
+
+    QFont fnt;
+    fnt.setPointSize(15);
+    fnt.setFamily("Arial");
+
+    m_ui->treeWidget->setFont(fnt);
     m_ui->treeWidget->setColumnCount(2);
     m_ui->treeWidget->setHeaderItem(new QTreeWidgetItem(QStringList() << tr("Title") << tr("Page") ));
     m_ui->treeWidget->header()->setStretchLastSection(false);
